@@ -13,15 +13,16 @@ import { FaGithub } from "react-icons/fa6";
 
 type Props = {};
 
-
 const nameText = [
   {
     text: "David",
-    classname: "text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 pt-8"
+    classname:
+      "text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 pt-8",
   },
   {
     text: "Baiye",
-    classname: "text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 pt-8"
+    classname:
+      "text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 pt-8",
   },
 ];
 
@@ -34,37 +35,51 @@ const Hero = (props: Props) => {
         {/* Change the text to say "Welcome to our website!" */}
         <div className="flex flex-col gap-3 text-center md:text-left">
           <div className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 pt-8">
-          <div className="hidden md:inline">
-          <TypewriterEffectSmooth words={nameText} />
-          </div>
-          <div className="md:hidden">
-            David Baiye
-          </div>
+            <div className="hidden md:inline">
+              <TypewriterEffectSmooth words={nameText} />
+            </div>
+            <div className="md:hidden">David Baiye</div>
           </div>
           <div className="text-2xl text-center md:text-left font-normal text-neutral-600 dark:text-neutral-400">
             I&apos;m a/an <FlipWords words={titleWords} />
           </div>
           <div className="flex items-center justify-center md:justify-start">
-          <div className="flex items-center gap-2 mt-2 text-center">
-            <p className="text-md">Find me on</p>
-            <div className="flex items-center gap-2 text-lg">
-              <FaXTwitter size={25} className="cursor-pointer" />
-              <FaWhatsapp size={25} className="cursor-pointer" />
-              <FaInstagram size={25} className="cursor-pointer" />
-              <FaGithub size={25} className="cursor-pointer" />
-            </div>
-          </div>
-          </div>
-          <div className="w-52 mt-4 text-center">
-            <button className="p-[3px] relative w-auto">
-              <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-              <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
-                <div className="flex items-center gap-3">
-                  <MdFileDownload className="text-white" />
-                  Download CV
-                </div>
+            <div className="flex items-center gap-2 mt-2 text-center">
+              <p className="text-md">Find me on</p>
+              <div className="flex items-center gap-2 text-lg">
+                <a
+                  href="https://x.com/thekideveloper" // Replace with your X profile
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=""
+                >
+                  <FaXTwitter size={25} className="cursor-pointer" />
+                </a>
+                <a
+                  href="https://wa.link/jngzmy"
+                  className=""
+                >
+                  <FaWhatsapp size={25} className="cursor-pointer" />
+              
+                </a>
+                <a
+                  href="https://www.instagram.com/thekideveloper/"
+                  className=""
+                >
+                  
+              
+                <FaInstagram size={25} className="cursor-pointer" />
+                </a>
+                <a
+                  href="https://github.com/dovidmoishe" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=""
+                >
+                  <FaGithub size={25} className="cursor-pointer" />
+                </a>
               </div>
-            </button>
+            </div>
           </div>
         </div>
 
@@ -73,7 +88,6 @@ const Hero = (props: Props) => {
         </div>
       </div>
     </div>
-  
   );
 };
 interface ImagesSliderProps {
