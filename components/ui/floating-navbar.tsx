@@ -52,7 +52,7 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-[5000] top-10 inset-x-0 mx-auto px-10 py-5 rounded-lg border border-gray-300 shadow-lg items-center justify-center space-x-4 bg-white",
+          "flex max-w-fit md:min-w-[70vw] lg:min-w-fit fixed z-[5000] top-10 inset-x-0 mx-auto px-10 py-5 rounded-lg border shadow-lg items-center justify-center space-x-4 bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-600",
           className
         )}
       >
@@ -61,7 +61,7 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative text-neutral-700 items-center flex space-x-1 hover:text-neutral-900 cursor-pointer"
+              "relative text-neutral-700 dark:text-neutral-300 items-center flex space-x-1 hover:text-neutral-900 dark:hover:text-neutral-100 cursor-pointer"
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>

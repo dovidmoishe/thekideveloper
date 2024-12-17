@@ -4,12 +4,13 @@ import { Button } from "@/components/ui/moving-border";
 
 const Experience = () => {
   return (
-    <div className="py-20 w-full bg-gray-50">
-      <p className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-gray-700 to-gray-900 pt-8 text-center">
+    <div className="py-20 w-full bg-black">
+      <p className="text-4xl sm:text-7xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-b from-gray-400 to-gray-200">
         My Work Experience
       </p>
 
-      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10  ">
+      {/* Added padding and centered content */}
+      <div className="w-full mt-12 px-8 sm:px-12 lg:px-20 max-w-7xl mx-auto grid lg:grid-cols-4 grid-cols-1 gap-10">
         {workExperience.map((card) => (
           <Button
             key={card.id}
@@ -22,7 +23,7 @@ const Experience = () => {
             }}
             className="flex-1 text-gray-800 border-gray-300 shadow-md"
           >
-            <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2 ">
+            <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
               <img
                 src={card.thumbnail}
                 alt={card.title}

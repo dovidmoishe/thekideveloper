@@ -7,13 +7,13 @@ import type { AppProps } from "next/app";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <NextSeo 
-        title="Thekideveloper - David Baiye Ayomide"
+      <NextSeo
+        title="David Baiye Ayomide"
         description="Portfolio website of the young software engineer "
       />
       <Layout>
-      <Component {...pageProps} />
-    </Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }

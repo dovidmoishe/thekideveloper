@@ -34,7 +34,12 @@ const Hero = (props: Props) => {
         {/* Change the text to say "Welcome to our website!" */}
         <div className="flex flex-col gap-3 text-center md:text-left">
           <div className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 pt-8">
+          <div className="hidden md:inline">
           <TypewriterEffectSmooth words={nameText} />
+          </div>
+          <div className="md:hidden">
+            David Baiye
+          </div>
           </div>
           <div className="text-2xl text-center md:text-left font-normal text-neutral-600 dark:text-neutral-400">
             I&apos;m a/an <FlipWords words={titleWords} />

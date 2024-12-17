@@ -34,7 +34,7 @@ const About = (props: Props) => {
   return (
     <div className="dark:bg-black bg-gray-50" id="about">
       <div className="max-w-7xl mx-auto p-8">
-      <p className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-gray-700 to-gray-900 pt-8 text-center">
+      <p className="text-4xl sm:text-7xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-b from-gray-400 to-gray-200">
         About Me
       </p>
 
@@ -79,8 +79,10 @@ const About = (props: Props) => {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2">
+        <div className="w-full lg:w-1/2 ">
+          <div className="bg-white p-10 rounded-lg">
           <IconCloud iconSlugs={slugs} />
+          </div>
         </div>
       </div>
     </div>

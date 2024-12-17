@@ -12,6 +12,8 @@ import nftcollection from "@/public/nft-collection.png"
 import solidity from "@/public/icons/solidity.png"
 import hardhat from "@/public/icons/hardhat.png"
 import noimage from "@/public/noimage.png"
+import studentHubX from "@/public/studenthubx.vercel.app_.png"
+import nestjs from "@/public/icons8-nestjs-48.png"
 import { fetchSimpleIcons } from "react-icon-cloud";
 
 const titleWords = [
@@ -21,7 +23,7 @@ const titleWords = [
   "Content Creator",
 ];
 
-const imagesForHero = ["/DavidBaiye.jpg", "/DavidBaiye2.jpg"];
+const imagesForHero = ["/david .jpg", "/DavidBaiye.jpg", "/DavidBaiye2.jpg"];
 
 const navItems = [
   { name: "Home", link: "/" },
@@ -31,6 +33,13 @@ const navItems = [
 ];
 
 const projects = [
+  {
+    title: "StudentHubX",
+    des: "StudentHubX is a platform designed to empower university students worldwide by creating a space that enhances academic performance, fosters connections, and promotes skill development. ",
+    img: studentHubX,
+    url: "https://studenthubx.vercel.app/",
+    iconLists: [nextjs, nestjs, tailwindcss, typescript]
+  },
   {
     title: "GloryousDecor Rentals website",
     des: "A website for a events decor rental business in Chicago, USA, built based on requirements by client.",
@@ -70,6 +79,13 @@ const projects = [
 
 const workExperience = [
   {
+    id: 0,
+    title: "Founder & Tech lead at StudentHubX",
+    desc: "Building a platform that empowers university students worldwide.",
+    className: "md:col-span-2",
+    thumbnail: "/exp1.svg",
+  },
+  {
     id: 1,
     title: "Junior Frontend Engineer at isitsafe.io",
     desc: "Assisted in the development of the web-based platform using Next.JS, TypeScript, AntD, This has by-far been the best work experience I've ever had.",
@@ -90,6 +106,7 @@ const workExperience = [
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
+  
 ]
 
 export { titleWords, imagesForHero, navItems, projects, workExperience };
