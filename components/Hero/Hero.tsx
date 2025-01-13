@@ -4,7 +4,7 @@ import David from "@/public/DavidBaiye.jpg";
 import { FlipWords } from "../ui/flip-words";
 import { imagesForHero, titleWords } from "@/data";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaTiktok, FaXTwitter } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { MdFileDownload } from "react-icons/md";
@@ -77,6 +77,14 @@ const Hero = (props: Props) => {
                   className=""
                 >
                   <FaGithub size={25} className="cursor-pointer" />
+                </a>
+                <a
+                  href="https://www.tiktok.com/@thekideveloper" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=""
+                >
+                  <FaTiktok size={25} className="cursor-pointer" />
                 </a>
               </div>
             </div>
