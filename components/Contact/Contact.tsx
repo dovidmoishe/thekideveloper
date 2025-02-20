@@ -43,12 +43,12 @@ export const Contact = () => {
         <div className="flex items-center space-x-4">
           <SiX className="text-blue-500 dark:text-blue-400 w-8 h-8" />
           <a
-            href="https://x.com/thekideveloper" // Replace with your X profile
+            href="https://x.com/thewonderdev" // Replace with your X profile
             target="_blank"
             rel="noopener noreferrer"
             className="text-lg text-gray-900 dark:text-white hover:underline"
           >
-            @thekideveloper
+            @thewonderdev
           </a>
         </div>
 
@@ -68,12 +68,12 @@ export const Contact = () => {
         <div className="flex items-center space-x-4">
           <FaTiktok className="text-gray-900 dark:text-white w-8 h-8" />
           <a
-            href="https://www.tiktok.com/@thekideveloper" // Replace with your GitHub
+            href="https://www.tiktok.com/@thewonderdev" // Replace with your GitHub
             target="_blank"
             rel="noopener noreferrer"
             className="text-lg text-gray-900 dark:text-white hover:underline"
           >
-           @thekideveloper
+           @thewonderdev
           </a>
         </div>
       </div>
