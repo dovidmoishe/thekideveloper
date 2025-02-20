@@ -47,7 +47,7 @@ const About = (props: Props) => {
             the world.
           </p>
           <p className="text-lg font-normal leading-relaxed">
-            With over 4 years of professional experience, I have honed my skills
+            With over 5 years of professional experience, I have honed my skills
             in various web technologies, focusing on building real-time
             projects. I also have a deep interest in Machine Learning and AI,
             which I&apos;m currently studying Computer
