@@ -18,9 +18,10 @@ import { fetchSimpleIcons } from "react-icon-cloud";
 
 const titleWords = [
   "Software Engineer",
-  "Aspiring Founder",
-  "AI enthusiast",
-  "Content Creator",
+  "Founder",
+  "AI engineer",
+  "Web3 developer",
+  "Content Creator ✝",
 ];
 
 const imagesForHero = ["/david .jpg", "/DavidBaiye.jpg", "/DavidBaiye2.jpg"];
@@ -62,7 +63,7 @@ const projects = [
     iconLists: [javascript, hardhat, solidity, reactNative]
   },
   {
-    title: "A Full-stack todo app by 13-year-old David😂",
+    title: "A Full-stack todo app",
     des: "This was a project I built in the early stages of my JavaScript Journey, but as soon as I learned to write server-side development with JavaScript I took it as the first project to add backend functionality to back then in 2022.",
     url: "https://github.com/dovidmoishe/Fullstack-todo-app",
     img: noimage,

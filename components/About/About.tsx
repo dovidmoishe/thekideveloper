@@ -50,13 +50,12 @@ const About = (props: Props) => {
             With over 4 years of professional experience, I have honed my skills
             in various web technologies, focusing on building real-time
             projects. I also have a deep interest in Machine Learning and AI,
-            which I&apos;m exploring further while preparing to study Computer
+            which I&apos;m currently studying Computer
             Science at the Federal University of Lafia.
           </p>
           <p className="text-lg font-normal leading-relaxed">
             In my free time, I enjoy staying updated with the latest tech trends
-            through articles and YouTube videos. My journey in coding began at
-            the age of 10, and my passion for technology continues to grow.
+            through articles and YouTube videos. 
           </p>
           <p className="text-sm text-gray-500">
             PS: Hover over any icon in the icon cloud to see its name.
