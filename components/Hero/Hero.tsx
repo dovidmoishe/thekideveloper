@@ -48,7 +48,7 @@ const Hero = (props: Props) => {
               <p className="text-md">Find me on</p>
               <div className="flex items-center gap-2 text-lg">
                 <a
-                  href="https://x.com/thewonderdev" // Replace with your X profile
+                  href="https://x.com/itsdavetech" // Replace with your X profile
                   target="_blank"
                   rel="noopener noreferrer"
                   className=""
@@ -63,7 +63,7 @@ const Hero = (props: Props) => {
               
                 </a>
                 <a
-                  href="https://www.instagram.com/thekideveloper/"
+                  href="https://www.instagram.com/itsdavetech_/"
                   className=""
                 >
                   
