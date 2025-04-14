@@ -19,6 +19,7 @@ const config = {
     },
     extend: {
       colors: {
+        neon: "#1F51FF",
         background: {
           DEFAULT: '#ffffff', // Light mode background color
           dark: '#1a1a1a',    // Custom dark mode background color (replace with your desired color)

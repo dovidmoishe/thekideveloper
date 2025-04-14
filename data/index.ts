@@ -1,21 +1,11 @@
-import javascript from "../public/icons/javascript.png";
-import expessjs from "../public/icons/express-js.png";
-import mongodb from "../public/icons/mongodb.png";
-import reactNative from "../public/icons/react-native.png";
-import tailwindcss from "../public/icons/tailwindcss.png";
-import nextjs from "../public/icons/nextjs.png";
-import typescript from "../public/icons/typescript.png";
-import antdesign from "../public/icons/antd.png";
+
 import rentals from "@/public/rentals.png"
 import lamecon from "@/public/lamecon.png"
 import nftcollection from "@/public/nft-collection.png"
-import solidity from "@/public/icons/solidity.png"
-import hardhat from "@/public/icons/hardhat.png"
 import noimage from "@/public/noimage.png"
 import studentHubX from "@/public/studenthubx.vercel.app_.png"
-import nestjs from "@/public/icons8-nestjs-48.png"
-import { fetchSimpleIcons } from "react-icon-cloud";
-
+import lalita from '@/public/lalita.png'
+import EduLearn from '@/public/EduLearn.png'
 const titleWords = [
   "Software Engineer",
   "Founder",
@@ -30,51 +20,60 @@ const navItems = [
   { name: "Home", link: "/" },
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Contact", link: "/contact" },
+  { name: "Contact", link: "#contact" },
 ];
 
 const projects = [
+  {
+    title: "EduLearn",
+    des: "An AI-powered learning platform that guides students through interactive problem-solving, rewarding progress with XP, tokens, and NFTs.",
+    img: EduLearn,
+    url: "https://www.youtube.com/watch?v=gufnVLfPKw0&t=2s"
+  },
+  {
+    title: "Lalita",
+    des: "Lalita is a modern, student-focused financial platform designed to help users save, learn, and access essential financial services with ease.",
+    img: lalita,
+    url: "https://lalita-fhg.vercel.app/",
+  },
   {
     title: "StudentHubX",
     des: "StudentHubX is a platform designed to empower university students worldwide by creating a space that enhances academic performance, fosters connections, and promotes skill development. ",
     img: studentHubX,
     url: "https://studenthubx.vercel.app/",
-    iconLists: [nextjs, nestjs, tailwindcss, typescript]
   },
   {
     title: "GloryousDecor Rentals website",
     des: "A website for a events decor rental business in Chicago, USA, built based on requirements by client.",
     img: rentals,
     url: "https://gloryousdecorentals.vercel.app",
-    iconLists: [typescript, tailwindcss, antdesign, nextjs, mongodb, expessjs], // This will be populated later
+  
   },
   {
     title: "Lamecon website",
     des: "A website for the organization I volunteer at here in Lafia, built by Myself and another developer of the Lamcon TechHub team.",
     url: "https://lamecon.vercel.app",
     img: lamecon,
-    iconLists: [typescript,tailwindcss, antdesign, nextjs], // This will be populated later
+
   },
   {
     title: "NFT Collection",
     des: "A simple react web app for minting of NFTs, I built this project while learning solidity in 2022. Not one of my proudest projects tho😅",
     url: "https://nft-collection-react.netlify.app/",
     img: nftcollection,
-    iconLists: [javascript, hardhat, solidity, reactNative]
+
   },
   {
     title: "A Full-stack todo app",
     des: "This was a project I built in the early stages of my JavaScript Journey, but as soon as I learned to write server-side development with JavaScript I took it as the first project to add backend functionality to back then in 2022.",
     url: "https://github.com/dovidmoishe/Fullstack-todo-app",
     img: noimage,
-    iconLists: [javascript, expessjs, mongodb]
   },
   {
     title: "Challenge App", 
     des: "An app(I only coded the backend tho) where you could share your journey on a specific challenge, for you could join the #100daysofcode challenge and post your progress everyday. Although today I admit that my knowledge of building effiecient applications was very limited back then.",
     url: "https://github.com/dovidmoishe/challenge-app-backend",
     img: noimage,
-    iconLists: [javascript, expessjs, mongodb]
   }
 ];
 

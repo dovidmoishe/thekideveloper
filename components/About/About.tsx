@@ -1,32 +1,8 @@
 import React from "react";
 import IconCloud from "@/components/magicui/icon-cloud";
 import { FaGithub } from "react-icons/fa6";
-
-const slugs = [
-  "typescript",
-  "javascript",
-  "react",
-  "html5",
-  "css3",
-  "nodedotjs",
-  "express",
-  "nextdotjs",
-  "postgresql",
-  "firebase",
-  "vercel",
-  "testinglibrary",
-  "docker",
-  "git",
-  "github",
-  "visualstudiocode",
-  "tailwindcss",
-  "figma",
-  "redux",
-  "antdesign",
-  "mongodb",
-  "appwrite",
-  "python"
-];
+import SkillsGrid from "./SkillsGrid";
+import { Badge } from "../ui/badge";
 
 type Props = {};
 
@@ -41,25 +17,19 @@ const About = (props: Props) => {
       <div className="flex flex-col lg:flex-row justify-between items-center m-5 gap-10 mt-7">
         <div className="w-full lg:w-1/2 space-y-6">
           <p className="text-lg font-normal leading-relaxed">
-            I&apos;m a passionate software engineer and aspiring start-up founder
-            driven by the desire to build impactful projects. Inspired by my
-            role model, Steve Jobs, I aim to create solutions that can change
-            the world.
+          I'm David Baiye, a driven software engineer and aspiring startup founder passionate about building innovative solutions that make a real impact. Inspired by Steve Jobs' vision, I aim to create technologies that transform industries and improve lives.
           </p>
           <p className="text-lg font-normal leading-relaxed">
-            With over 5 years of professional experience, I have honed my skills
-            in various web technologies, focusing on building real-time
-            projects. I also have a deep interest in Machine Learning and AI,
-            which I&apos;m currently studying Computer
-            Science at the Federal University of Lafia.
+          With 5+ years of hands-on experience, I specialize in web development, building scalable and real-time applications that push the boundaries of what's possible. I have a deep focus on emerging technologies, particularly in Web3, where I explore decentralized systems and blockchain integration. Additionally, I'm actively exploring the powerful potential of AI and Machine Learning, further enriching my skills as a Computer Science student at the Federal University of Lafia.
           </p>
           <p className="text-lg font-normal leading-relaxed">
-            In my free time, I enjoy staying updated with the latest tech trends
-            through articles and YouTube videos. 
+          Beyond coding, I stay ahead of the curve by keeping up with the latest industry trends, including innovations in Google Gemini, which I leverage to bring cutting-edge solutions to the table. I’m always eager to collaborate on projects that challenge the status quo and drive meaningful change.
           </p>
-          <p className="text-sm text-gray-500">
-            PS: Hover over any icon in the icon cloud to see its name.
-          </p>
+       <p className="text-lg font-normal leading-relaxed text">
+  Whether you're building the next big thing in Web3, launching a bold startup, or just need a skilled engineer to bring your vision to life — I’m ready to help turn ideas into reality.
+</p>
+
+          
           <div className="flex items-center gap-4">
             <a
               href="https://github.com/dovidmoishe"
@@ -79,9 +49,31 @@ const About = (props: Props) => {
         </div>
 
         <div className="w-full lg:w-1/2 ">
-          <div className="bg-white p-10 rounded-lg">
-          <IconCloud iconSlugs={slugs} />
-          </div>
+         
+          <SkillsGrid />
+
+          <div className="mt-10">
+                <h3 className="text-xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">
+                  Areas of Focus
+                </h3>
+                <div className="flex flex-wrap gap-3">
+                  {[
+                    "Web Development",
+                    "Web3",
+                    "AI & ML",
+                    "Scalable Applications",
+                    "Real-time Systems",
+                    "Blockchain",
+                  ].map((area) => (
+                    <Badge
+                      key={area}
+                      className="bg-gradient-to-r bg-white text-black border border-indigo-500/30 hover:from-indigo-500/30 hover:to-purple-500/30"
+                    >
+                      {area}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
         </div>
       </div>
     </div>
