@@ -24,13 +24,13 @@ const Projects = () => {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card>
+           <div key={index}>
+             <Card>
                   <Image
           src={project.img}
           alt={project.title}
           className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110"
           priority
-          key={index}
         />
 
                   <CardTitle>
@@ -44,6 +44,7 @@ const Projects = () => {
                   </CardDescription>
                   
                 </Card>
+           </div>
           ))}
         </div>
       </div>
