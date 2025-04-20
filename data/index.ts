@@ -6,6 +6,7 @@ import noimage from "@/public/noimage.png"
 import studentHubX from "@/public/studenthubx.vercel.app_.png"
 import lalita from '@/public/lalita.png'
 import EduLearn from '@/public/EduLearn.png'
+import promptlybuilt from "@/public/promptlybuilt.png"
 const titleWords = [
   "Software Engineer",
   "Founder",
@@ -29,6 +30,12 @@ const projects = [
     des: "An AI-powered learning platform that guides students through interactive problem-solving, rewarding progress with XP, tokens, and NFTs.",
     img: EduLearn,
     url: "https://www.youtube.com/watch?v=gufnVLfPKw0&t=2s"
+  },
+  {
+    title: "PromptlyBuilt",
+    des: "Build a stunning portfolio website with the power of prompts. One prompt, one beautiful portfolio. Supercharge your online presence with the power of prompts.",
+    url: "https://promptlybuilt.vercel.app",
+    img: promptlybuilt
   },
   {
     title: "Lalita",
