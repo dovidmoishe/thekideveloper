@@ -2,7 +2,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from "react-icons/fa";
-import { FaTiktok } from "react-icons/fa6";
+import { FaTiktok, FaYoutube } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
 import { SiX } from "react-icons/si";
 
@@ -182,6 +182,8 @@ export const Contact = () => {
               Reach me on WA
             </a>
           </div>
+
+
           
           {/* X (formerly Twitter) */}
           <div className="flex items-center space-x-4">
@@ -192,9 +194,21 @@ export const Contact = () => {
               rel="noopener noreferrer"
               className="text-lg text-gray-900 dark:text-white hover:underline"
             >
-              @thewonderdev
+              @itsdavetech
             </a>
           </div>
+
+          <div className="flex items-center space-x-4">
+            <FaYoutube className="text-red-500 w-8 h-8" />
+            <a
+              href="https://www.youtube.com/@itsdavetech"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg text-gray-900 dark:text-white hover:underline"
+            >
+              @itsdavetech
+              </a>
+              </div>
           
           {/* GitHub */}
           <div className="flex items-center space-x-4">

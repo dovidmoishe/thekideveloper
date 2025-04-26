@@ -17,7 +17,7 @@ const About = (props: Props) => {
       <div className="flex flex-col lg:flex-row justify-between items-center m-5 gap-10 mt-7">
         <div className="w-full lg:w-1/2 space-y-6">
           <p className="text-lg font-normal leading-relaxed">
-          I&apos;m David Baiye, a driven software engineer and aspiring startup founder passionate about building innovative solutions that make a real impact. Inspired by Steve Jobs&apos; vision, I aim to create technologies that transform industries and improve lives.
+          I&apos;m David Baiye, a driven web3 developer, AI engineer and startup founder passionate about building innovative solutions that make a real impact. Inspired by Steve Jobs&apos; vision, I aim to create technologies that transform industries and improve lives.
           </p>
           <p className="text-lg font-normal leading-relaxed">
           With 5+ years of hands-on experience, I specialize in web development, building scalable and real-time applications that push the boundaries of what&apos;s possible. I have a deep focus on emerging technologies, particularly in Web3, where I explore decentralized systems and blockchain integration. Additionally, I&apos;m actively exploring the powerful potential of AI and Machine Learning, further enriching my skills as a Computer Science student at the Federal University of Lafia.

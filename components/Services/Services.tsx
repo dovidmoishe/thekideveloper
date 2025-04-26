@@ -2,56 +2,79 @@ import React from 'react'
 import Image from 'next/image'
 import { cn } from '@/lib/utils';
 import{ useRouter } from 'next/router'
+import { useState } from "react"
+import { motion } from "framer-motion"
+import { ArrowRight } from "lucide-react"
+import { services } from '@/data';
 
-type Props = {}
 type ServiceCardProps = {
   title: string
   description: string
 
 }
-
-const ServiceCard = () => {
-  const router = useRouter()
-  return (
-    <div className="max-w-xs w-full group/card">
-      <div
-        className={cn(
-          " cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl  max-w-sm mx-auto backgroundImage flex flex-col justify-between p-4",
-          "bg-[url(https://images.unsplash.com/photo-1544077960-604201fe74bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80)] bg-cover"
-        )}
-      >
-        <div className="absolute w-full h-full top-0 left-0 transition duration-300 group-hover/card:bg-black opacity-60"></div>
-        <div className="flex flex-row items-center space-x-4 z-10">
-          <Image
-            height="100"
-            width="100"
-            alt="Avatar"
-            src="/manu.png"
-            className="h-10 w-10 rounded-full border-2 object-cover"
-          />
-        
-        </div>
-        <div className="text content">
-          <h1 className="font-bold text-xl md:text-2xl text-gray-50 relative z-10">
-            Author Card
-          </h1>
-          <p className="font-normal text-sm text-gray-50 relative z-10 my-4">
-            Card with Author avatar, complete name and time to read - most
-            suitable for blogs.
-          </p>
-          <button onClick={() => {
-            router.push('https://wa.me/09014891014?text=I"m%_____%20and%%20your%20car%20for%20sale')
-          }}></button>
-        </div>
-      </div>
-    </div>
-  );
-  };
-
-const Services = (props: Props) => {
-  return (
-    <div>Services</div>
-  )
+interface ServiceItem {
+  id: string
+  title: string
+  description: string
+  icon?: string
+  link?: string
+}
+interface Props {
+  servicesData: ServiceItem[]
 }
 
-export default Services
+  export default function Services({servicesData}: Props) {
+    const [hoveredService, setHoveredService] = useState<string | null>(null)
+    return (
+      <section className="w-full py-16 bg-black">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="mb-12 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Services</h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              I can help you with the following services.
+            </p>
+          </div>
+  
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {servicesData.map((service) => (
+              <motion.div
+                key={service.id}
+                className="relative bg-[#111122] rounded-lg p-6 border border-[#222244] h-full flex flex-col"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+                onMouseEnter={() => setHoveredService(service.id)}
+                onMouseLeave={() => setHoveredService(null)}
+              >
+                <h3 className="text-xl font-semibold text-white mb-3">{service.title}</h3>
+                <p className="text-gray-400 mb-6 flex-grow">{service.description}</p>
+  
+                {service.link && (
+                  <motion.a
+                    href={service.link}
+                    className="inline-flex items-center text-[#6e8fff] hover:text-[#8ea5ff] transition-colors"
+                    animate={{
+                      x: hoveredService === service.id ? 5 : 0,
+                    }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    Learn more <ArrowRight className="ml-2 h-4 w-4" />
+                  </motion.a>
+                )}
+  
+                <motion.div
+                  className="absolute inset-0 rounded-lg bg-gradient-to-r from-[#3b5bdb] to-[#4c6ef5] opacity-0"
+                  style={{ mixBlendMode: "overlay" }}
+                  animate={{
+                    opacity: hoveredService === service.id ? 0.15 : 0,
+                  }}
+                  transition={{ duration: 0.3 }}
+                />
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }

@@ -1,22 +1,7 @@
 import React, { useState } from "react";
-import { FlipWords } from "../ui/flip-words";
-import { titleWords } from "@/data";
-import { FaTiktok, FaXTwitter, FaWhatsapp, FaInstagram, FaGithub } from "react-icons/fa6";
+import { FaTiktok, FaXTwitter, FaWhatsapp, FaInstagram, FaGithub, FaYoutube } from "react-icons/fa6";
 import { motion } from "framer-motion";
-import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
-
 type Props = {};
-
-const nameText = [
-  {
-    text: "David",
-    classname: "text-5xl sm:text-8xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500",
-  },
-  {
-    text: "Baiye",
-    classname: "text-5xl sm:text-8xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500",
-  },
-];
 
 const socialLinks = [
   { icon: FaXTwitter, url: "https://x.com/itsdavetech", name: "Twitter" },
@@ -24,6 +9,7 @@ const socialLinks = [
   { icon: FaInstagram, url: "https://www.instagram.com/itsdavetech_/", name: "Instagram" },
   { icon: FaGithub, url: "https://github.com/dovidmoishe", name: "GitHub" },
   { icon: FaTiktok, url: "https://www.tiktok.com/@thewonderdev", name: "TikTok" },
+  {icon:FaYoutube, url:"https://www.youtube.com/@itsdavetech", name:"youtube"}
 ];
 
 const Hero = (props: Props) => {
@@ -99,7 +85,7 @@ const Hero = (props: Props) => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          I&apos;m a/an <FlipWords words={titleWords} />
+          I&apos;m a AI and web3 developer
         </motion.div>
 
         {/* Social links with hover effects */}

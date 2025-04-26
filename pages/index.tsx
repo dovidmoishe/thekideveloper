@@ -5,6 +5,8 @@ import About from "@/components/About/About";
 import Projects from "@/components/Projects/Project";
 import Experience from "@/components/Experience/WorkExperience";
 import { Contact } from "@/components/Contact/Contact";
+import Services from "@/components/Services/Services";
+import { services } from "@/data";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +17,7 @@ export default function Home() {
       <About />
       <Projects />
       <Experience />
+      <Services servicesData={services}/>
       <Contact />
     </>
   );

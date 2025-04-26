@@ -7,15 +7,6 @@ import studentHubX from "@/public/studenthubx.vercel.app_.png"
 import lalita from '@/public/lalita.png'
 import EduLearn from '@/public/EduLearn.png'
 import promptlybuilt from "@/public/promptlybuilt.png"
-const titleWords = [
-  "Software Engineer",
-  "Founder",
-  "AI engineer",
-  "Web3 developer",
-  "Content Creator ✝",
-];
-
-const imagesForHero = ["/david .jpg", "/DavidBaiye.jpg", "/DavidBaiye2.jpg"];
 
 const navItems = [
   { name: "Home", link: "/" },
@@ -23,6 +14,35 @@ const navItems = [
   { name: "Projects", link: "#projects" },
   { name: "Contact", link: "#contact" },
 ];
+
+const services = [
+  {
+    id: "1",
+    title: "Smart contract dev",
+    description: "I build secure and scalable smart contracts on Ethereum and Solana, tailored for your project's needs.",
+    link: `https://wa.me/2349014891014?text=Hi%2C%20I'm%20interested%20in%20your%20smart%20contract%20development%20service%20on%20Ethereum%20and%20Solana.
+`
+  },
+  {
+    id: "2",
+    title: "dApp UI development",
+    description: "I build stunning and modern dApp UI's that projects your idea in a visually appealing manner",
+    link:  `https://wa.me/2349014891014?text=Hi%2C%20I'm%20interested%20in%20your%20service%20for%20building%20a%20stunning%20and%20modern%20dApp%20UI%20for%20my%20project.`
+
+  },
+  {
+    id: "3",
+    title: "Full-stack web app",
+    description: "I build professional, modern, scalable, and fast web apps tailored to your needs.",
+    link: `https://wa.me/2349014891014?text=Hi%2C%20I'm%20interested%20in%20your%20full-stack%20web%20app%20development%20service.`
+  },
+  {
+    id: "4",
+    title: "Web development tutor",
+    description: "I offer personalized web development tutoring sessions, based on your learning pace and goals.",
+    link: `https://wa.me/2349014891014?text=Hi%2C%20I'm%20interested%20in%20your%20web%20development%20tutoring%20sessions.`
+  }
+]
 
 const projects = [
   {
@@ -49,20 +69,20 @@ const projects = [
     img: studentHubX,
     url: "https://studenthubx.vercel.app/",
   },
-  {
-    title: "GloryousDecor Rentals website",
-    des: "A website for a events decor rental business in Chicago, USA, built based on requirements by client.",
-    img: rentals,
-    url: "https://gloryousdecorentals.vercel.app",
+  // {
+  //   title: "GloryousDecor Rentals website",
+  //   des: "A website for a events decor rental business in Chicago, USA, built based on requirements by client.",
+  //   img: rentals,
+  //   url: "https://gloryousdecorentals.vercel.app",
   
-  },
-  {
-    title: "Lamecon website",
-    des: "A website for the organization I volunteer at here in Lafia, built by Myself and another developer of the Lamcon TechHub team.",
-    url: "https://lamecon.vercel.app",
-    img: lamecon,
+  // },
+  // {
+  //   title: "Lamecon website",
+  //   des: "A website for the organization I volunteer at here in Lafia, built by Myself and another developer of the Lamcon TechHub team.",
+  //   url: "https://lamecon.vercel.app",
+  //   img: lamecon,
 
-  },
+  // },
   {
     title: "NFT Collection",
     des: "A simple react web app for minting of NFTs, I built this project while learning solidity in 2022. Not one of my proudest projects tho😅",
@@ -116,4 +136,4 @@ const workExperience = [
   
 ]
 
-export { titleWords, imagesForHero, navItems, projects, workExperience };
+export { services, navItems, projects, workExperience };
