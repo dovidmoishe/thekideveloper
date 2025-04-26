@@ -1,17 +1,8 @@
 import React from 'react'
-import Image from 'next/image'
-import { cn } from '@/lib/utils';
-import{ useRouter } from 'next/router'
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
-import { services } from '@/data';
 
-type ServiceCardProps = {
-  title: string
-  description: string
-
-}
 interface ServiceItem {
   id: string
   title: string
@@ -52,15 +43,17 @@ interface Props {
   
                 {service.link && (
                   <motion.a
-                    href={service.link}
-                    className="inline-flex items-center text-[#6e8fff] hover:text-[#8ea5ff] transition-colors"
-                    animate={{
-                      x: hoveredService === service.id ? 5 : 0,
-                    }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    Learn more <ArrowRight className="ml-2 h-4 w-4" />
-                  </motion.a>
+                  href={service.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-[#6e8fff] hover:text-[#8ea5ff] transition-colors cursor-pointer"
+                  animate={{
+                    x: hoveredService === service.id ? 5 : 0,
+                  }}
+                  transition={{ duration: 0.2 }}
+                >
+                  Learn more <ArrowRight className="ml-2 h-4 w-4" />
+                </motion.a>
                 )}
   
                 <motion.div
