@@ -26,7 +26,9 @@ import {
   SiMongodb,
   SiAppwrite,
   SiPython,
-  SiEthereum
+  SiEthereum,
+  SiSupabase,
+  SiNestjs
 } from "react-icons/si"
 import { BiLogoVisualStudio } from "react-icons/bi";
 
@@ -51,6 +53,8 @@ const skills = [
   { name: "Figma", icon: SiFigma, color: "#F24E1E", category: "design" },
   { name: "Redux", icon: SiRedux, color: "#764ABC", category: "frontend" },
   { name: "Ant Design", icon: SiAntdesign, color: "#0170FE", category: "frontend" },
+  {name: "Supabase", icon: SiSupabase, color: "#3ECF8E", category: "database"},
+  {name: "NestJS", icon: SiNestjs, color: "#E0234E", category: "backend"},
   { name: "MongoDB", icon: SiMongodb, color: "#47A248", category: "database" },
   { name: "Appwrite", icon: SiAppwrite, color: "#FD366E", category: "backend" },
   { name: "Python", icon: SiPython, color: "#3776AB", category: "language" },
@@ -78,12 +82,12 @@ const SkillsGrid: FC = () => {
           scale: 1.05,
           transition: { duration: 0.2 },
         }}
-        className="flex flex-col items-center justify-center p-3 rounded-lg bg-gray-800/50 border border-gray-700 hover:border-indigo-500/50 transition-all duration-300"
+        className="flex items-center justify-center p-2 rounded-lg bg-gray-800/50 border border-gray-700 hover:border-indigo-500/50 transition-all duration-300"
       >
-        <div className="text-xl mb-2" style={{ color: skill.color }}>
+        <div className="text-sm mb-2" style={{ color: skill.color }}>
           <skill.icon />
         </div>
-        <span className="text-xs text-gray-300 text-center font-medium">{skill.name}</span>
+        <span className="pl-1 text-xs text-gray-300 text-center font-medium">{skill.name}</span>
       </motion.div>
     ))}
   </div>
