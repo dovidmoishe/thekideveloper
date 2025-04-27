@@ -17,16 +17,16 @@ const About = (props: Props) => {
       <div className="flex flex-col lg:flex-row justify-between items-center md:items-start m-5 gap-10 mt-7">
         <div className="w-full lg:w-1/2 space-y-6">
           <p className="text-base font-normal leading-relaxed">
-          I'm David Baiye — a Web3 developer, AI engineer, and startup founder passionate about building technologies that drive real impact.
+          I&apos;m David Baiye — a Web3 developer, AI engineer, and startup founder passionate about building technologies that drive real impact.
           </p>
           <p className="text-base font-normal leading-relaxed">
           With 5+ years of experience, I specialize in web development, decentralized systems, and AI solutions.
           </p>
           <p className="text-base font-normal leading-relaxed">
-          Currently studying Computer Science at the Federal University of Lafia, I stay ahead by exploring innovations like Google Gemini and pushing the boundaries of what's possible.
+          Currently studying Computer Science at the Federal University of Lafia, I stay ahead by exploring innovations like Google Gemini and pushing the boundaries of what&apos;s possible.
           </p>
        <p className="text-base font-normal leading-relaxed text">
-       I'm driven by a love for building, learning, and creating the future.
+       I&apos;m driven by a love for building, learning, and creating the future.
 </p>
 
           
