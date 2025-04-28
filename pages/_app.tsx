@@ -13,6 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
     <Head>
     <meta name="description" content="David Baiye AI & Web3 developer building scalable dApps, smart contracts, and intelligent learning platforms. Explore my projects, and services at itsdave.tech." />
+    <meta name="keywords" content="web3 developer, AI engineer, solidity, nextjs developer, blockchain developer, smart contract auditor, david baiye"/>
     </Head>
       <DefaultSeo {...SEO} />
       <Layout>
