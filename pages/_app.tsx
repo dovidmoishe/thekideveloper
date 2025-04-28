@@ -1,6 +1,5 @@
 import Layout from "@/components/Shared/Layout";
 import "@/styles/globals.css";
-import { NextSeo } from "next-seo";
 import { Analytics } from "@vercel/analytics/next";
 import { DefaultSeo } from "next-seo";
 import SEO from "@/data/seo";

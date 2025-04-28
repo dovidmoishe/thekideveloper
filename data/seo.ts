@@ -15,7 +15,7 @@ const SEO = {
       "Building AI-powered apps, smart contracts, and scalable web platforms. See David Baiye's portfolio and hire for your next project.",
     images: [
       {
-        url: "https://i.imgur.com/i6mxanY.png", // Replace with an OG banner image URL
+        url: "https://i.imgur.com/i6mxanY.png",
         width: 1200,
         height: 630,
         alt: "David Baiye Portfolio",
