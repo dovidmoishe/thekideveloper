@@ -30,7 +30,7 @@ const Projects = () => {
           src={project.img}
           alt={project.title}
           className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110"
-          priority
+          priority={false}
         />
 
                   <CardTitle>

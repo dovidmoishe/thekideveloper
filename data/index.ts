@@ -7,6 +7,7 @@ import studentHubX from "@/public/studenthubx.vercel.app_.png"
 import lalita from '@/public/lalita.png'
 import EduLearn from '@/public/EduLearn.png'
 import promptlybuilt from "@/public/promptlybuilt.png"
+import { title } from "process"
 
 const navItems = [
   { name: "Home", link: "/" },
@@ -41,6 +42,12 @@ const services = [
     title: "Web development tutor",
     description: "I offer personalized web development tutoring sessions, based on your learning pace and goals.",
     link: `https://wa.me/2349014891014?text=Hi%2C%20I'm%20interested%20in%20your%20web%20development%20tutoring%20sessions.`
+  },
+  {
+    id: "5",
+    title: "AI-powered app development",
+    description: "I build AI-powered applications that leverage the latest advancements in machine learning and natural language processing.",
+    link: `https://wa.me/2349014891014?text=Hi%2C%20I'm%20interested%20in%20your%20AI-powered%20app%20development%20service.`
   }
 ]
 

@@ -85,7 +85,7 @@ const Hero = (props: Props) => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          I&apos;m a AI and web3 developer
+          I build next-gen AI and web3 products
         </motion.div>
 
         {/* Social links with hover effects */}
