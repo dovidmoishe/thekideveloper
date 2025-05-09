@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { StaticImageData } from "next/image";
 import Image from "next/image";
 import { projects } from "@/data";
-import { useRouter } from "next/navigation";
-import { Card, CardDescription, CardTitle, Container } from "../cards-demo-3";
+import { Card, CardDescription, CardTitle } from "../cards-demo-3";
 import Link from "next/link";
 import { FaLink } from "react-icons/fa";
 interface CardProps {
@@ -31,6 +30,7 @@ const Projects = () => {
           alt={project.title}
           className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110"
           priority={false}
+          
         />
 
                   <CardTitle>
