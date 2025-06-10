@@ -31,7 +31,7 @@ const Experience = () => {
               <div className="lg:ms-5">
            
                 {card.timeline && (
-                  <div className="text-xs text-gray-500 dark:text-gray-400 mb-1">
+                  <div className="text-left lg:text-center text-xs text-gray-500 dark:text-gray-400 mb-1">
                     {card.timeline}
                   </div>
                 )}
