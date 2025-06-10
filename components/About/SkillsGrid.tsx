@@ -43,12 +43,9 @@ const skills = [
   { name: "Next.js", icon: SiNextdotjs, color: "#000000", category: "frontend" },
   { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1", category: "database" },
   { name: "Firebase", icon: SiFirebase, color: "#FFCA28", category: "database" },
-  { name: "Vercel", icon: SiVercel, color: "#000000", category: "devops" },
-  { name: "Testing Library", icon: SiTestinglibrary, color: "#E33332", category: "testing" },
-  { name: "Docker", icon: SiDocker, color: "#2496ED", category: "devops" },
+    { name: "Docker", icon: SiDocker, color: "#2496ED", category: "devops" },
   { name: "Git", icon: SiGit, color: "#F05032", category: "tool" },
   { name: "GitHub", icon: SiGithub, color: "#181717", category: "tool" },
-  { name: "VS Code", icon: BiLogoVisualStudio, color: "#007ACC", category: "tool" },
   { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4", category: "frontend" },
   { name: "Figma", icon: SiFigma, color: "#F24E1E", category: "design" },
   { name: "Redux", icon: SiRedux, color: "#764ABC", category: "frontend" },
@@ -82,7 +79,7 @@ const SkillsGrid: FC = () => {
           scale: 1.05,
           transition: { duration: 0.2 },
         }}
-        className="flex items-center justify-center p-2 rounded-lg bg-gray-800/50 border border-gray-700 hover:border-indigo-500/50 transition-all duration-300"
+        className="flex items-center justify-center px-3 py-2 rounded-lg bg-gray-800/50 border border-gray-700 hover:border-indigo-500/50 transition-all duration-300"
       >
         <div className="text-sm mb-2" style={{ color: skill.color }}>
           <skill.icon />
